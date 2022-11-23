@@ -10,3 +10,6 @@ import pandas as pd
 
 #%%
 df = pd.read_csv('die-casting_dataset.csv')
+#%%
+df.head()
+#%%
