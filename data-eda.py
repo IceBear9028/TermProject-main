@@ -3,8 +3,8 @@ from dash import Dash, dcc, html, Input, Output
 import pandas as pd
 from flask import Flask
 
-df = pd.read_csv('./data_refine/refine-error-lot-die-casting-dataset.csv', index_col=0)
-# df = pd.read_csv('./data_refine/refine-lot-die-casting-dataset.csv', index_col=0)
+# df = pd.read_csv('./data_refine/refine-error-lot-die-casting-dataset.csv', index_col=0)
+df = pd.read_csv('./data_refine/refine-lot-die-casting-dataset.csv', index_col=0)
 
 server = Flask(__name__)
 app = Dash(__name__, server = server)
@@ -79,6 +79,6 @@ def scatterPlot(error_item, condition, lot_condition):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, port = 8000)
 
 
