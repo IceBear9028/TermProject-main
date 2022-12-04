@@ -79,6 +79,5 @@ def scatterPlot(error_item, condition, lot_condition):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, port = 7000)
-
+    app.run_server(debug=True, port = 2000)
 
